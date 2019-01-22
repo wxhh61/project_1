@@ -29,8 +29,8 @@ def question_2(cursor):
     print("-" * 80)
     for r in results:
         print('{} - {} views'.format(r[0], r[1]))
-        
-        
+
+
 def question_3(cursor):
     sql_query = '''
     select t1.day, CAST (t2.error_views as FLOAT) / t1.views as rate
